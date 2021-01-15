@@ -68,8 +68,8 @@
               <img class="imgshow" src="assets\img\1.jpg" />
               <div class="text"></div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
           </div>
         </div>
         <div class="appInfo">
@@ -99,11 +99,11 @@
               href="https://github.com/kikuKeii/niji/releases/download/1.0.4/Niji-sticker-for-WhatsApp-1.0.4-release.apk"><img
                 class="appStore" src="" />DOWNLOAD HERE</a><br><br>
             <div class="alert info">
-              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+              <span class="closebtn">&times;</span>
               <strong>Hello!</strong> thank you for coming, this is just a fun project.
             </div>
             <div class="alert warning">
-              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+              <span class="closebtn">&times;</span>
               <strong>Apabila</strong> ada konten yang merugikan klik <a href="./privacypolicy/index.html">disini</a>.
             </div>
           </div>
@@ -192,7 +192,7 @@
               <h3>twitter NIJISANJI_ID</h3>
               <a class="twitter-timeline" data-width="600" data-height="350"
                 href="https://twitter.com/NIJISANJI_ID?ref_src=twsrc%5Etfw">Tweets by NIJISANJI_ID</a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
             </div>
           </div>
 
@@ -258,6 +258,7 @@
           </div>
           <div class="footerLinks">
             <a href="changelog/index.html" target="_self">What's New</a>
+            <a href="group/index.html" target="_self">WhatsApp Group</a>
             <a href="support/index.html" target="_self">Support Me</a>
             <a href="privacypolicy/index.html" target="_self">Privacy Policy</a>
           </div>
@@ -265,38 +266,8 @@
       </div>
     </div>
   </div>
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
-    }
-
-    function currentSlide(n) {
-      showSlides((slideIndex = n));
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
+  <script src="./js.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 
 </html>
